@@ -1,0 +1,2 @@
+rootProject.name = 'prima-core'
+include 'java:PrimaBasic', 'java:PrimaDla', 'java:PrimaMaths', 'java:PrimaIo'

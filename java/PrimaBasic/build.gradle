@@ -1,0 +1,31 @@
+plugins {
+  id 'java-library'
+  id 'maven-publish'
+}
+
+group = 'org.primaresearch.pdf'
+
+repositories {
+  mavenCentral()
+}
+
+sourceSets {
+    main {
+         java {
+            srcDirs = ['src']
+         }
+    }
+
+    test {
+        java {
+            srcDirs = ['test']
+        }
+    }
+}
+
+dependencies {
+  implementation 'com.itextpdf:itext7-core:7.1.14'
+  implementation 'org.apache.pdfbox:pdfbox:1.8.6'
+  implementation 'org.apache.pdfbox:fontbox:1.8.6'
+  testImplementation 'junit:junit:4.13.1'
+}
